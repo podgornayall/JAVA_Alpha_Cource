@@ -12,12 +12,11 @@ public class Task41 {
         value2 = scan.nextInt();
         System.out.print("Введите значение третьей переменной: ");
         value3 = scan.nextInt();
-        if (value1 >= value2) {
-            maxValue = value1;
-        } else {
+        maxValue = value1;
+        if (value2 > maxValue) {
             maxValue = value2;
         }
-        if (value3 >= maxValue) {
+        if (value3 > maxValue) {
             maxValue = value3;
         }
         System.out.println("max(" + value1 + "; " + value2 + "; " + value3 + ") = " + maxValue);
